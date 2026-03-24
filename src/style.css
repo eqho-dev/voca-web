@@ -1401,6 +1401,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 3;
+  pointer-events: none;
   background-image:
     linear-gradient(rgba(33, 113, 113, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(33, 113, 113, 0.06) 1px, transparent 1px);
