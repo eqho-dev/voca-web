@@ -506,13 +506,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Loading Screen ---
-  const loader = document.querySelector('.loader');
-  if (loader) {
-    setTimeout(() => {
-      loader.classList.add('loader--hidden');
-      setTimeout(() => loader.remove(), 600);
-    }, 400);
-  }
 
 });
