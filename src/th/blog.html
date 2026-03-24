@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บล็อก — VOCA</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="alternate" hreflang="en" href="../blog.html">
+  <link rel="alternate" hreflang="th" href="blog.html">
+</head>
+<body>
+
+  <div class="grain"></div>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <svg class="loader__lemon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="50" cy="52" rx="30" ry="35" stroke="#FEF250" stroke-width="1.5" transform="rotate(-15 50 52)"/>
+      <path d="M50 17 C52 8, 58 4, 62 2" stroke="#FEF250" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M48 18 C44 10, 46 4, 50 1" stroke="#FEF250" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+  </div>
+  <div class="progress-bar"></div>
+  <div class="cursor-glow"></div>
+  <!-- Lemon Cursor -->
+  <div class="cursor-lemon">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="20" cy="21" rx="12" ry="14" stroke="#FEF250" stroke-width="1.5" transform="rotate(-15 20 21)"/>
+      <path d="M20 7 C21 3, 24 1, 26 0" stroke="#FEF250" stroke-width="1" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-pill">
+    <div class="nav-pill__inner">
+      <a href="index.html" class="nav-pill__logo">VOCA</a>
+      <div class="nav-pill__links">
+        <a href="index.html" class="nav-pill__link">หน้าแรก</a>
+        <a href="about.html" class="nav-pill__link">เกี่ยวกับเรา</a>
+        <div class="nav-pill__dropdown">
+          <a href="services.html" class="nav-pill__link">บริการ</a>
+          <div class="nav-pill__dropdown-menu">
+            <a href="services.html#creative-localization" class="nav-pill__dropdown-item">การแปลเชิงสร้างสรรค์</a>
+            <a href="services.html#branding" class="nav-pill__dropdown-item">แบรนด์ดิ้งและอัตลักษณ์องค์กร</a>
+            <a href="services.html#digital-activation" class="nav-pill__dropdown-item">ดิจิทัลและการเปิดตัวแบรนด์</a>
+            <a href="services.html#content-studio" class="nav-pill__dropdown-item">สตูดิโอคอนเทนต์หลายภาษา</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-pill__link nav-pill__link--active">บล็อก</a>
+        <a href="stage.html" class="nav-pill__link">ผลงาน</a>
+        <div class="nav-pill__lang">
+          <a href="../blog.html" class="nav-pill__lang-btn" aria-label="English">EN</a>
+          <a href="blog.html" class="nav-pill__lang-btn nav-pill__lang-btn--active" aria-label="ภาษาไทย">TH</a>
+        </div>
+        <a href="contact.html" class="nav-pill__cta">ติดต่อเรา</a>
+      </div>
+      <button class="nav-pill__toggle" aria-label="เมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <div class="page-header__bg-gradient"></div>
+    </div>
+    <div class="container">
+      <div class="page-header__tag">ข้อมูลเชิงลึกและเรื่องราว</div>
+      <h1 class="page-header__title"><span style="color: var(--accent-light);">บล็อก</span> VOCA</h1>
+      <p class="page-header__desc">มุมมองเกี่ยวกับการสร้างแบรนด์ระดับโลก กลยุทธ์ทางวัฒนธรรม การแปล และการตลาดดิจิทัลจากทีม VOCA</p>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="section" style="padding-bottom: 40px;">
+    <div class="container">
+      <div class="grid-asym--2 reveal" style="gap: 48px; background: var(--grey-light); border-radius: 24px; overflow: hidden;">
+        <div class="img-placeholder" style="aspect-ratio: auto; min-height: 400px; border-radius: 0;">
+          <img src="https://images.unsplash.com/photo-1728426340277-7f532d018057?w=900&q=80&fit=crop" alt="บทความเด่น">
+        </div>
+        <div style="padding: 48px 48px 48px 0; display: flex; flex-direction: column; justify-content: center;">
+          <span style="display: inline-block; background: var(--yellow); color: var(--noise); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 14px; border-radius: 30px; margin-bottom: 16px; width: fit-content;">แนะนำ</span>
+          <p style="font-size: 0.85rem; color: #999; margin-bottom: 12px;">18 กุมภาพันธ์ 2026 &bull; อ่าน 8 นาที</p>
+          <h2 style="font-size: 1.8rem; margin-bottom: 16px; line-height: 1.3;">ทำไม "การแปล" ไม่เพียงพออีกต่อไปสำหรับแบรนด์ระดับโลกในปี 2026</h2>
+          <p style="font-size: 1rem; color: #666; line-height: 1.7; margin-bottom: 24px;">ช่องว่างระหว่างการแปลตามตัวอักษรกับการสะท้อนทางวัฒนธรรมไม่เคยกว้างเท่านี้มาก่อน เมื่อแบรนด์ขยายสู่ตลาดที่หลากหลาย โมเดลเก่าของแปลแล้วเผยแพร่กำลังล้มเหลว นี่คือแนวทางใหม่</p>
+          <a href="#" class="btn btn--outline-dark" style="width: fit-content;">อ่านบทความ <span class="btn__arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Filter Tags -->
+  <section style="padding: 0 0 40px;">
+    <div class="container">
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <button class="btn btn--primary filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">บทความทั้งหมด</button>
+        <button class="btn btn--outline-dark filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">การแปล</button>
+        <button class="btn btn--outline-dark filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">แบรนด์ดิ้ง</button>
+        <button class="btn btn--outline-dark filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">การตลาดดิจิทัล</button>
+        <button class="btn btn--outline-dark filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">วัฒนธรรม</button>
+        <button class="btn btn--outline-dark filter-btn" style="padding: 10px 24px; font-size: 0.75rem; border-radius: 40px;">กลยุทธ์</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="blog-grid stagger-children">
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">วัฒนธรรม</span>
+            <img src="https://images.unsplash.com/photo-1645658043538-fc2bb1702cfe?w=700&q=80&fit=crop" alt="การตลาดเชิงวัฒนธรรม">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">12 กุมภาพันธ์ 2026 &bull; อ่าน 6 นาที</p>
+            <h3 class="blog-card__title">ต้นทุนแฝงของความผิดพลาดทางวัฒนธรรมในการตลาดระดับโลก</h3>
+            <p class="blog-card__excerpt">น้ำเสียงผิดหนึ่งครั้ง สัญญาณทางวัฒนธรรมที่อ่านผิดหนึ่งครั้ง — และมูลค่าแบรนด์ที่สร้างมาหลายเดือนก็หายไปในชั่วข้ามคืน นี่คือวิธีที่แบรนด์ชั้นนำปกป้องตัวเอง</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">การแปล</span>
+            <img src="https://images.unsplash.com/photo-1638289506304-7c4356157206?w=600&q=80&fit=crop" alt="AI และการแปล">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">5 กุมภาพันธ์ 2026 &bull; อ่าน 5 นาที</p>
+            <h3 class="blog-card__title">AI + มนุษย์: อนาคตของการแปลเชิงสร้างสรรค์</h3>
+            <p class="blog-card__excerpt">การถกเถียงระหว่างการแปลด้วย AI กับมนุษย์พลาดประเด็น ข้อได้เปรียบที่แท้จริงอยู่ที่วิธีการทำงานร่วมกัน เราสำรวจโมเดลผสมผสาน</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">กลยุทธ์</span>
+            <img src="https://images.unsplash.com/photo-1761818645908-25523b8df309?w=600&q=80&fit=crop" alt="กลยุทธ์ตลาด">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">28 มกราคม 2026 &bull; อ่าน 7 นาที</p>
+            <h3 class="blog-card__title">การสร้างแผนเข้าสู่ตลาด: กรอบแนวทางทีละขั้นตอน</h3>
+            <p class="blog-card__excerpt">การเข้าสู่ตลาดใหม่โดยไม่มีแผนเหมือนกับการนำทางโดยไม่มีแผนที่ นี่คือกรอบแนวทางที่เราใช้กับแบรนด์ระดับโลกเพื่อให้มั่นใจในการขยายตัวอย่างมั่นใจ</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">ดิจิทัล</span>
+            <img src="https://images.unsplash.com/photo-1604575326936-74087afd3967?w=600&q=80&fit=crop&crop=top" alt="กลยุทธ์โซเชียล">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">20 มกราคม 2026 &bull; อ่าน 4 นาที</p>
+            <h3 class="blog-card__title">ทำไมกลยุทธ์โซเชียลของคุณต้องใช้แนวทาง Local-First</h3>
+            <p class="blog-card__excerpt">แบรนด์ระดับโลกมักใช้กลยุทธ์โซเชียลมีเดียแบบเดียวกับทุกตลาด แต่แคมเปญที่ประสบความสำเร็จที่สุดเริ่มจากท้องถิ่นและขยายตัวตามวัฒนธรรม</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">แบรนด์ดิ้ง</span>
+            <img src="https://images.unsplash.com/photo-1728426340277-7f532d018057?w=600&q=80&fit=crop" alt="ความสอดคล้องของแบรนด์">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">14 มกราคม 2026 &bull; อ่าน 6 นาที</p>
+            <h3 class="blog-card__title">ความสอดคล้องของแบรนด์ vs. ความเกี่ยวข้องในท้องถิ่น: การหาจุดสมดุล</h3>
+            <p class="blog-card__excerpt">ความตึงเครียดระหว่างความสอดคล้องของแบรนด์ระดับโลกกับความเกี่ยวข้องในตลาดท้องถิ่นเป็นเรื่องจริง นี่คือวิธีจัดการโดยไม่เสียสิ่งใดสิ่งหนึ่ง</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card__image">
+            <span class="blog-card__category">คอนเทนต์</span>
+            <img src="https://images.unsplash.com/photo-1645658043538-fc2bb1702cfe?w=600&q=80&fit=crop&crop=center" alt="วิดีโอหลายภาษา">
+          </div>
+          <div class="blog-card__body">
+            <p class="blog-card__date">7 มกราคม 2026 &bull; อ่าน 5 นาที</p>
+            <h3 class="blog-card__title">วิดีโอหลายภาษา: รูปแบบคอนเทนต์ที่แบรนด์ไม่ควรมองข้าม</h3>
+            <p class="blog-card__excerpt">วิดีโอครองทุกแพลตฟอร์มหลัก แต่การผลิตวิดีโอที่ใช้ได้ข้ามภาษาและวัฒนธรรมต้องการมากกว่าซับไตเติลและการพากย์ทับ</p>
+            <a href="#" class="blog-card__readmore">อ่านเพิ่มเติม <span>&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More -->
+      <div style="text-align: center; margin-top: 64px;" class="reveal">
+        <a href="#" class="btn btn--outline-dark">โหลดบทความเพิ่มเติม <span class="btn__arrow">&darr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section section--dark" style="padding: 80px 0;">
+    <div class="dot-grid"></div>
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 560px; margin: 0 auto;">
+        <div class="section__tag" style="justify-content: center;">ติดตามข่าวสาร</div>
+        <h2 style="color: var(--clarity); font-size: 2rem; margin-bottom: 16px; margin-top: 16px;">รับข้อมูลเชิงลึก<br>ส่งตรงถึงอีเมลของคุณ</h2>
+        <p style="color: rgba(255,255,255,0.5); margin-bottom: 32px;">เข้าร่วมกับผู้นำแบรนด์ระดับโลกที่ได้รับสรุปรายเดือนเกี่ยวกับการแปล วัฒนธรรม และกลยุทธ์ระดับโลก</p>
+        <div style="display: flex; gap: 12px; max-width: 480px; margin: 0 auto;">
+          <input type="email" placeholder="your@email.com" class="form__input" style="flex: 1; border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: var(--clarity);">
+          <button class="btn btn--primary" style="white-space: nowrap;">สมัครรับข่าวสาร</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="nav__logo" style="margin-bottom: 8px;">VOCA</div>
+          <p class="footer__brand-desc">VOCA ช่วยแบรนด์ก้าวสู่ระดับโลกโดยไม่สูญเสียตัวตน ความชัดเจนเชิงกลยุทธ์และความลึกซึ้งทางวัฒนธรรมสำหรับโลกดิจิทัล</p>
+        </div>
+        <div>
+          <div class="footer__title">บริษัท</div>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">เกี่ยวกับเรา</a>
+            <a href="services.html" class="footer__link">บริการ</a>
+            <a href="stage.html" class="footer__link">ผลงาน</a>
+            <a href="blog.html" class="footer__link">บล็อก</a>
+            <a href="contact.html" class="footer__link">ติดต่อ</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__title">บริการ</div>
+          <div class="footer__links">
+            <a href="services.html#creative-localization" class="footer__link">การแปลเชิงสร้างสรรค์</a>
+            <a href="services.html#branding" class="footer__link">แบรนด์ดิ้งและอัตลักษณ์</a>
+            <a href="services.html#digital-activation" class="footer__link">ดิจิทัลแอคทิเวชัน</a>
+            <a href="services.html#content-studio" class="footer__link">สตูดิโอคอนเทนต์</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__title">ติดต่อ</div>
+          <div class="footer__links">
+            <a href="mailto:hello@voca.global" class="footer__link">hello@voca.global</a>
+            <a href="#" class="footer__link">LinkedIn</a>
+            <a href="#" class="footer__link">Twitter / X</a>
+            <a href="#" class="footer__link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 VOCA. สงวนลิขสิทธิ์</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="footer__social"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
