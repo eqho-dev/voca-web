@@ -33,10 +33,10 @@ The site follows VOCA's **"Swiss Gold"** design system — Swiss grid, bold mini
 ## Getting Started
 
 ```sh
-pnpm install     # Install dependencies
-pnpm dev         # Start dev server
-pnpm build       # Production build → dist/
-pnpm preview     # Preview production build
+npm install      # Install dependencies
+npm run dev      # Start dev server
+npm run build    # Production build → dist/
+npm run preview  # Preview production build
 ```
 
 ## Project Structure
@@ -62,7 +62,18 @@ src/
 
 ## Deployment
 
-Pushes to `main` trigger an automatic deploy via GitHub Actions. The site is served from the `dist/` directory at the `/voca-web/` base path.
+The site uses two branches with GitHub Pages:
+
+| Branch | URL | Purpose |
+|--------|-----|---------|
+| `main` | [Production site](https://eqho-dev.github.io/voca-web/) | Live website — only the tech lead merges here |
+| `develop` | [Staging site](https://eqho-dev.github.io/voca-web/staging/) | Preview of pending changes — safe to merge freely |
+
+Pushes to either branch trigger an automatic deploy via GitHub Actions. Both versions are served from a single GitHub Pages deployment at the `/voca-web/` base path.
+
+## Editing the Website (Non-Technical)
+
+If you're a non-technical team member using OpenAI Codex to make changes, see the **[CODEX_GUIDE.md](CODEX_GUIDE.md)** for a complete step-by-step walkthrough covering GitHub setup, Codex setup, how to prompt changes, and how to preview them on the staging site.
 
 ## Status
 
