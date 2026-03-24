@@ -1344,7 +1344,6 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
   background: var(--noise);
   color: var(--clarity);
 }
@@ -1424,7 +1423,7 @@ p {
 }
 
 .hero__tag {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 12px;
   font-family: var(--font-body);
@@ -1447,6 +1446,8 @@ p {
 }
 
 .hero__title {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 32px;
   opacity: 0;
   animation: clipReveal 1s var(--ease-out-expo) 0.4s forwards;
@@ -1454,10 +1455,7 @@ p {
 
 .hero__title em {
   font-style: normal;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
   position: relative;
 }
 
@@ -1493,7 +1491,7 @@ p {
   }
   to {
     opacity: 1;
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(-10% 0 0 0);
     transform: translateY(0);
   }
 }

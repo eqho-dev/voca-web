@@ -6,7 +6,7 @@ const outDir = resolve(__dirname, 'dist')
 
 export default defineConfig({
   root: root,
-  base: '/voca-web/',
+  base: './',
 
   build: {
     outDir: outDir,
